@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de testes</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    
-    teste de novo
-    <script src="index.js"></script>
+    <p class="primeiro-passo">Como deseja se cadastrar?</p>
+    <style>
+        .primeiro-passo{
+            color: blue;
+            text-align: center;
+            font-size: 32px;
+            background-color: rgb(255, 255, 255) ;
+        }
+    </style>
+
+    <button id="seletor01">Palestrante</button>
+    <button id="seletor02">Participante</button>
+
+    <style>
+        button {
+            position: relative; /*foi a melhor forma que consegui fazer funcionar no dia que fiz*/
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background-color: #9c9c9c;
+            border: none;
+            color: black;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 14px;
+            transition: background-color 0.5s;
+        }
+        button:hover {
+            background-color: #025bff;
+        }
+    </style>
+    <p class="segundo-passo">Insira seu nome abaixo:</p>
+    <style>
+        .segundo-passo{
+            color: blue;
+            text-align: center;
+            font-size: 32px;
+            background-color: rgb(255, 255, 255) ;
+        }
+    </style>
+    <div class="nome-palestrante">
+        <label for="user-name">Nome de usuario:</label>
+        <input type="text" id="user-name" name="user-name">
+    </div>
+    <style>
+        
+    </style>
 </body>
 </html>
